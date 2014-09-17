@@ -1,0 +1,699 @@
+2014-09-17 07:56:07 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cake/etude/User
+Stack Trace:
+#0 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 07:56:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 07:56:34 Error: [MissingTableException] Table receivers for model receiver was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'receivers',
+  'class' => 'receiver',
+  'ds' => 'default',
+)
+Request URL: /cake/etude/messages
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Model.php(3247): Model->setSource('receivers')
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1063): Model->getDataSource()
+#2 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(Message), Array)
+#3 /var/www/html/cake/lib/Cake/Controller/Component/PaginatorComponent.php(198): Model->find('all', Array)
+#4 /var/www/html/cake/etude/Controller/MessagesController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: MessagesController->index()
+#6 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 07:57:38 Error: [MissingControllerException] Controller class EnrolmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'EnrolmentsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/etude/enrolments
+Stack Trace:
+#0 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 08:41:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 08:41:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/edit/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(82): Model->find('first', Array)
+#7 [internal function]: UsersController->edit('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 08:42:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 08:42:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/edit/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(82): Model->find('first', Array)
+#7 [internal function]: UsersController->edit('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:04:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/edit/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(82): Model->find('first', Array)
+#7 [internal function]: UsersController->edit('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:05:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:09:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:09:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:09:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:10:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:10:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:10:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'group_members.id' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:11:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `GroupMe...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `GroupMe...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `GroupMe...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:12:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'group_members.id' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:14:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'group_members.id' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:15:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'group_members.id' in 'field list'
+Request URL: /cake/etude/users/add
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/cake/etude/Controller/UsersController.php(58): Model->find('list')
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 10:29:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:30:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:31:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:31:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:32:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/edit/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(82): Model->find('first', Array)
+#7 [internal function]: UsersController->edit('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:33:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:33:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:39:12 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/cake/etude/Model/User.php, line 207]
+2014-09-17 10:39:12 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 207)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 207, Array)
+#2 /var/www/html/cake/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 207, Array)
+#3 /var/www/html/cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 10:40:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:41:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.to' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:42:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:42:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:46:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:48:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:48:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:58:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:58:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupMember.user_id' in 'on clause'
+Request URL: /cake/etude/users/view/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `group_m...', Array)
+#2 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `group_m...', Array, Array)
+#3 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1251): DboSource->fetchAll('SELECT `group_m...', false)
+#4 /var/www/html/cake/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasAndBelongsTo...', 'group_members', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(User), Array)
+#6 /var/www/html/cake/etude/Controller/UsersController.php(40): Model->find('first', Array)
+#7 [internal function]: UsersController->view('1')
+#8 /var/www/html/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cake/etude/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:59:47 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/cake/etude/Controller/UsersController.php, line 84]
+2014-09-17 10:59:47 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/etude/users/edit/1
+Stack Trace:
+#0 /var/www/html/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 84, Array)
+#2 /var/www/html/cake/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 84, Array)
+#3 /var/www/html/cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
